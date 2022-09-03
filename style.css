@@ -43,6 +43,7 @@ header {
 .menu-items li {
   list-style: none;
   padding: 1rem;
+  font-weight: 400;
 }
 
 .menu-items a {
@@ -112,6 +113,7 @@ header {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 11px;
 }
 
 .about-content img {
@@ -203,7 +205,7 @@ header {
   width: 70%;
 }
 .progress-line .bootstrap {
-  width: 50%;
+  width: 70%;
 }
 .progress-line .javascript {
   width: 50%;
@@ -245,7 +247,7 @@ header {
   content: "70%";
 }
 .progress-line .bootstrap::after {
-  content: "50%";
+  content: "70%";
 }
 .progress-line .javascript::after {
   content: "50%";
@@ -622,8 +624,9 @@ header {
   }
 
   .proj-1 img {
-    height: 240px;
-    width: 290px;
+    border-radius: 50%;
+  /* height:40vw; */
+  /* width:30vw; */
     margin-bottom: 0.5rem;
   }
 
@@ -634,8 +637,9 @@ header {
   }
 
   .proj-2 img {
-    height: 240px;
-    width: 290px;
+    border-radius: 50%;
+    /* height:40vw; */
+    /* width:30vw; */
     margin-bottom: 0.5rem;
   }
 
@@ -654,7 +658,7 @@ header {
 
 @media (min-width: 769px) and (max-width: 1200px) {
   html {
-    font-size: 70%;
+    /* font-size: 3rem; */
   }
 
   .about-content .left-content {
@@ -704,5 +708,26 @@ header {
 @media (orientation: landscape) and (max-height: 500px) {
   .header {
     height: 90vmax;
+  }
+  body{
+    /* font-size: 1rem;; */
+  }
+}
+
+#profile_pic{
+  
+  border-radius: 50%;
+  width:15vw;
+  height:15vw;
+  margin-bottom:11px;
+
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 2.5rem;
+  }
+  img{
+    width: 10px;
   }
 }
